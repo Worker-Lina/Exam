@@ -1,0 +1,28 @@
+﻿<Window x:Class="ExamWpfApp.StartForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamWpfApp"
+        mc:Ignorable="d"
+        Title="StartForm" Height="350" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0" Grid.Column="0" FontSize="16">
+            <MenuItem Header="Программа">
+                <MenuItem x:Name="mi_data" Header="Ввод данных" Click="mi_data_Click"></MenuItem>
+                <MenuItem x:Name="mi_receipt" Header="Отчеты" Click="mi_receipt_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="bt_exit" Header="Выход" Click="bt_exit_Click" ></MenuItem>
+        </Menu>
+
+        <Image Source="bears.jpg" Stretch="Fill" Grid.Column="0" Grid.Row="1"></Image>
+    </Grid>
+</Window>
